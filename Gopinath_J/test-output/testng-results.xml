@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-20T11:35:25 IST" name="Suite" finished-at="2024-06-20T11:35:53 IST" duration-ms="27499">
+    <groups>
+    </groups>
+    <test started-at="2024-06-20T11:35:25 IST" name="Test" finished-at="2024-06-20T11:35:53 IST" duration-ms="27499">
+      <class name="ERP_Testing.ERP_Testing">
+        <test-method is-config="true" signature="applicationLaunch()[pri:0, instance:ERP_Testing.ERP_Testing@7b36aa0c]" started-at="2024-06-20T11:35:11 IST" name="applicationLaunch" finished-at="2024-06-20T11:35:25 IST" duration-ms="14051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationLaunch -->
+        <test-method signature="customer_Management()[pri:1, instance:ERP_Testing.ERP_Testing@7b36aa0c]" started-at="2024-06-20T11:35:25 IST" name="customer_Management" finished-at="2024-06-20T11:35:37 IST" duration-ms="11580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customer_Management -->
+        <test-method signature="supplier_Management()[pri:2, instance:ERP_Testing.ERP_Testing@7b36aa0c]" started-at="2024-06-20T11:35:37 IST" name="supplier_Management" finished-at="2024-06-20T11:35:39 IST" duration-ms="2481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- supplier_Management -->
+        <test-method signature="Inventory_Management()[pri:3, instance:ERP_Testing.ERP_Testing@7b36aa0c]" started-at="2024-06-20T11:35:39 IST" name="Inventory_Management" finished-at="2024-06-20T11:35:53 IST" duration-ms="13341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Inventory_Management -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ERP_Testing.ERP_Testing@7b36aa0c]" started-at="2024-06-20T11:35:53 IST" name="tearDown" finished-at="2024-06-20T11:35:54 IST" duration-ms="1136" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a id="LinkButton1" href="javascript:__doPostBack('ctl00$LinkButton1','')" style="text-align: right">...</a> is not clickable at point (40, 16). Other element would receive the click: <div id="ContentPlaceHolder1_MsgBox1_trial" style="display: inline; background-color: lightgrey; color: black; font-family: verdana; font-size: 10px; position: absolute; top: 0px; left: 0px; border-width: 1px; border-style: solid; border-color: gray; padding: 2px; z-index: 65535;">...</div>
+  (Session info: chrome=109.0.5414.120)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6984f450220636c75adeee9765840460, clickElement {id=260a1ca8-c411-4ba3-aa57-e90038c2ad80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Gopi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50232}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50232/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6984f450220636c75adeee9765840460)] -> css selector: [id='LinkButton1']]
+Session ID: 6984f450220636c75adeee9765840460]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a id="LinkButton1" href="javascript:__doPostBack('ctl00$LinkButton1','')" style="text-align: right">...</a> is not clickable at point (40, 16). Other element would receive the click: <div id="ContentPlaceHolder1_MsgBox1_trial" style="display: inline; background-color: lightgrey; color: black; font-family: verdana; font-size: 10px; position: absolute; top: 0px; left: 0px; border-width: 1px; border-style: solid; border-color: gray; padding: 2px; z-index: 65535;">...</div>
+  (Session info: chrome=109.0.5414.120)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6984f450220636c75adeee9765840460, clickElement {id=260a1ca8-c411-4ba3-aa57-e90038c2ad80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Gopi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50232}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50232/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6984f450220636c75adeee9765840460)] -> css selector: [id='LinkButton1']]
+Session ID: 6984f450220636c75adeee9765840460
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at ERP_Testing.ERP_Login.tearDown(ERP_Login.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:344)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ERP_Testing.ERP_Testing -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

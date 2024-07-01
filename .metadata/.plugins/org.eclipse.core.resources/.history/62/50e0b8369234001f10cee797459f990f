@@ -1,0 +1,27 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
+public class practice {
+
+	public static void isPresent(String text,char c) {
+		int i;
+		for(i=0;i<text.length();i++) {
+			if(text.charAt(i)==c) {
+				
+				break;
+			}
+		} System.out.println(i+1);
+	}
+
+	public static void main(String args[]) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the text:");
+		String text = scan.next();
+		System.out.println("Enter the character to find:");
+		char c = scan.next().charAt(0);
+		isPresent(text,c);
+		
+
+	}
+}

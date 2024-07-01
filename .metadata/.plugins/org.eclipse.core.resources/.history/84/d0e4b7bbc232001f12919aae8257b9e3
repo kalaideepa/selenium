@@ -1,0 +1,30 @@
+package APITesting;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class HttpURLConnectionExample {
+	
+	public void getMethod() throws MalformedURLException, IOException {
+		
+		String url = "https://reqres.in/api/users?page=2";
+		HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
+		connection.setRequestMethod("GET");
+		connection.connect();
+		
+		int statusCode = connection.getResponseCode();
+		System.out.println("Status code is:"+statusCode);
+		
+		String message = connection.getResponseMessage();
+		System.out.println("Response message is:"+message);
+		
+	}
+	
+	public static void main(String args[]) throws MalformedURLException, IOException {
+		HttpURLConnectionExample connectionExample = new HttpURLConnectionExample();
+		connectionExample.getMethod();
+	}
+
+ }

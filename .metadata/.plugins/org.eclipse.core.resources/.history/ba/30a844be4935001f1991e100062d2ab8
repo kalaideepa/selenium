@@ -1,0 +1,20 @@
+package Automation;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class FromExcel {
+	Object[][] data;
+	public void getData() throws IOException {
+		
+		FileInputStream fis = new FileInputStream("C:\\Users\\Gopi\\Desktop\\LoginDatas.xlsx");
+		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+		XSSFSheet sheet = workbook.getSheet("Sheet1");
+		
+		
+	}
+
+}

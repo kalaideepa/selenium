@@ -1,0 +1,20 @@
+package UniRestLib;
+
+import kong.unirest.HttpResponse;
+import kong.unirest.JsonNode;
+import kong.unirest.Unirest;
+
+public class GET_Method {
+
+	public void getMethod() {
+		
+		HttpResponse<JsonNode> json = Unirest.get("https://dummy.restapiexample.com/api/v1/employees").asJson();
+		
+		
+	}
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+
+public class Basics {
+
+	public static void main(String[] args) {
+		
+		HashSet<String> a = new HashSet<String>(); // doesn't accept duplicate values, element won't store in sequential order
+		a.add("Gopi");
+		a.add("Kalai");
+		a.add("Gopika");
+		a.add("KAlai");
+		
+		for(int i=0;i<a.size();i++) {
+			System.out.println(a);
+		}
+		
+		
+		
+		
+		
+		
+	}
+
+}

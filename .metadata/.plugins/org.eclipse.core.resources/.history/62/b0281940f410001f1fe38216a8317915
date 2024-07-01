@@ -1,0 +1,17 @@
+
+public class Basics {
+
+	public static void main(String[] args) {
+		int arr[]=new int[5];
+		arr[0]=15;
+		arr[1]=12;
+		arr[2]=45;
+		arr[3]=78;
+		arr[4]=85;
+		arr[6]=100;
+		for(int e:arr)
+			System.out.println(e);
+		
+	}
+
+}

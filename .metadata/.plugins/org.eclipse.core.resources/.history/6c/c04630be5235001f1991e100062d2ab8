@@ -1,0 +1,59 @@
+package Automation;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class FromExcel {
+	
+	List<String> usernameList = new ArrayList<String>();
+	List<String> passwordList = new ArrayList<String>();
+	
+	DataFormatter formatter = new DataFormatter();
+	 
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+
+		FileInputStream fis = new FileInputStream("C:\\Users\\Gopi\\Desktop\\LoginDatas.xlsx");
+		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+		XSSFSheet sheet = workbook.getSheet("Sheet1");
+		int rowCount = sheet.getPhysicalNumberOfRows();
+		int coulmnCount = sheet.getRow(0).getPhysicalNumberOfCells();
+
+		Object[][] data = new Object[rowCount-1][coulmnCount];
+        int c=2;
+		for(int i=0;i<rowCount-1;i++) {
+			XSSFRow row = sheet.getRow(i+1);
+			
+			for(int j=0;j<coulmnCount;j++) {
+				
+				XSSFCell cell = row.getCell(j);
+				if(c%2==0) {
+					usernameList.add((String) data[i][j]);
+				}else {
+					passwordList.add((String) data[i][j]);
+				}
+				c++;	
+				
+			}
+
+		} 
+
+
+	}
+	
+	
+}

@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+
+public class Basics {
+
+	public static void main(String[] args) {
+		/* int arr[]=new int[6]; //static array
+		arr[0]=15;
+		arr[1]=12;
+		arr[2]=45;
+		arr[3]=78;
+		arr[4]=85;
+		arr[5]=100;
+		for(int e:arr)
+			System.out.println(e); */
+		
+		ArrayList<Integer> arr = new ArrayList<Integer>(); //dynamic memory
+		arr.add(15);
+		arr.add(100);
+		arr.add(15);
+		arr.add(100);
+		arr.add(15);
+		arr.add(100);
+		arr.add(15);
+		arr.add(100);
+		arr.add(15);
+		arr.add(100);
+		arr.add(15);
+		arr.add(100);
+		
+		for(int i=0;i<arr.size();i++) {
+			System.out.println(arr.get(i));
+		}
+		
+		
+		
+	}
+
+}

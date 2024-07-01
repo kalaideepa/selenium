@@ -1,0 +1,24 @@
+package APITesting;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class POSTMethod {
+	
+	public void postMethod() throws MalformedURLException, IOException {
+		
+		String url="https://reqres.in/api/users";
+		HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection();
+		
+		conn.setRequestMethod("POST");
+		conn.setRequestProperty("content-Type", "application/json");
+	}
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

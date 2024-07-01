@@ -1,0 +1,32 @@
+package Automation;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class ExcelDataDriven {
+	
+	@Test
+	public void print() {
+		
+		
+	}
+	
+	@DataProvider
+	public void getData() throws IOException {
+		
+		FileInputStream fis = new FileInputStream("C:\\\\Users\\\\Gopi\\\\Desktop\\\\LoginDatas.xlsx");
+		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+		XSSFSheet sheet = workbook.getSheet("Sheet1");
+		int rowCount = sheet.getPhysicalNumberOfRows();
+		int columnCount = sheet.getRow(0).getPhysicalNumberOfCells();
+		
+		Object[][] data = new Object[rowCount-1][columnCount];
+		
+	}
+
+}

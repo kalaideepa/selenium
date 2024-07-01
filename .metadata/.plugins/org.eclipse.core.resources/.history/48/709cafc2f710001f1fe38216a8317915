@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+
+public class Basics {
+
+	public static void main(String[] args) {
+		/* int arr[]=new int[6]; //static array
+		arr[0]=15;
+		arr[1]=12;
+		arr[2]=45;
+		arr[3]=78;
+		arr[4]=85;
+		arr[5]=100;
+		for(int e:arr)
+			System.out.println(e); */
+		
+		ArrayList<String> arr = new  ArrayList<String>(); 
+		arr.add("Gopi"); //0
+		arr.add("Kalai"); //1
+		arr.add("Gopika"); //2
+		arr.add("Kalai"); //3
+		
+		System.out.println(arr.contains("Kalai")); 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

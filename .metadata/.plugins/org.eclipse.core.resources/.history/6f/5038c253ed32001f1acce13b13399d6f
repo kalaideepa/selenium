@@ -1,0 +1,36 @@
+package APITesting;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class DELETE_Method {
+	
+	public void deleteMethod() throws MalformedURLException, IOException {
+		
+		String url = "https://dummy.restapiexample.com/api/v1/delete/4";
+		HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection();
+		
+		conn.setRequestMethod("DELETE");
+		conn.connect();
+		
+		System.out.println("Status code is:"+conn.getResponseCode());
+		System.out.println("Response message code is:"+conn.getResponseMessage());
+		
+		
+	}
+
+	public static void main(String[] args) throws MalformedURLException, IOException {
+		
+		DELETE_Method d = new DELETE_Method();
+		d.deleteMethod();
+		
+		
+
+
+		
+
+	}
+
+}
